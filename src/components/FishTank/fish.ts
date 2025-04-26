@@ -1,3 +1,5 @@
+import * as Phaser from 'phaser';
+
 export type FishInfo = {
   text: string[];
   fishSpeed: number;

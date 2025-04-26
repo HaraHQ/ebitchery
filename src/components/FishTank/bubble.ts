@@ -1,3 +1,5 @@
+import * as Phaser from 'phaser';
+
 export class Bubble extends Phaser.GameObjects.Text {
   private pulseTimer: Phaser.Time.TimerEvent;
 

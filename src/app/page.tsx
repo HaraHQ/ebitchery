@@ -1,10 +1,13 @@
 "use client";
 
-import FishTank from "@/components/FishTank";
 import { FishDetail, FishInfo } from "@/components/FishTank/fish";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useMemo } from "react";
+
+import dynamic from "next/dynamic";
+
+const FishTank = dynamic(() => import("@/components/FishTank"), { ssr: false })
 
 export default function Home() {
   const [fishDetails, setFishDetails] = useState<FishDetail | null>(null);

@@ -1,5 +1,6 @@
 import { Bubble } from './bubble';
 import { Fish, FishDetail, FishInfo } from './fish';
+import * as Phaser from 'phaser';
 
 export class FishTankScene extends Phaser.Scene {
   fishSpeed: number = 5000;
